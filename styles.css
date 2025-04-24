@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: #d4fff3;
+    color: #1a1a1a;
+  }
+  
+  header {
+    background-color: #27ae60; 
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: #1a1a1a;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  nav button {
+    margin: 0.3rem;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 2px solid #87d3bd;
+    border-radius: 8px;
+    color: #004d40;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  nav button:hover {
+    background-color: #dcedc8;
+  }
+  
+  .energia-section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .energia-section h2 {
+    margin-bottom: 1.5rem;
+    color: #065f46;
+  }
+  
+  .info-containers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .info-box {
+    background-color: #baf5e8;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 45%;
+    min-width: 250px;
+    margin: 0.5rem;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .info-box h3 {
+    color: #37a5ff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .img-container img {
+    max-width: 900px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  @media (max-width: 600px) {
+    .info-box {
+      width: 100%;
+    }
+  
+    .img-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .beneficios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .beneficios-grid .info-box {
+    width: 30%;
+    min-width: 250px;
+  }
+  
+  @media (max-width: 768px) {
+    .beneficios-grid .info-box {
+      width: 100%;
+    }
+  }
+  

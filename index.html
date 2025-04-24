@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energías Renovables Limpias</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Energías Renovables Limpias</h1>
+    <nav>
+      <button onclick="scrollToSection('solar')">🌞 Solar</button>
+      <button onclick="scrollToSection('eolica')">💨 Eólica</button>
+      <button onclick="scrollToSection('hidraulica')">💧 Hidráulica</button>
+      <button onclick="scrollToSection('geotermica')">🌋 Geotérmica</button>
+      <button onclick="scrollToSection('beneficios')">✅ Beneficios</button>
+    </nav>
+  </header>
+
+  <section id="solar" class="energia-section">
+    <h2>💡 Energía Solar 🌞</h2>
+    <div class="info-containers">
+      <div class="info-box">
+        <h3>¿Qué es?</h3>
+        <p>La energía solar aprovecha la radiación del sol para generar electricidad o calor.🌱</p>
+      </div>
+      <div class="info-box">
+        <h3>Aplicaciones</h3>
+        <p>Paneles solares, sistemas de calentamiento de agua y plantas solares.🌱</p>
+      </div>
+    </div>
+    <div class="img-container">
+      <img src="panelsola.png" alt="Paneles solares">
+    </div>
+  </section>
+
+<section id="eolica" class="energia-section">
+  <h2>💡 Energía Eólica 💨</h2>
+  <div class="info-containers">
+    <div class="info-box">
+      <h3>¿Qué es?</h3>
+      <p>Se genera a partir del viento que mueve turbinas conectadas a generadores eléctricos.🌱</p>
+    </div>
+    <div class="info-box">
+      <h3>ventajas</h3>
+      <p> No emite gases containantes y es ideal en zonas de mucho viento.🌱</p>
+    </div>
+  </div>
+  <div class="img-container">
+    <img src="aeolica.png" alt="Energía Eólica">
+  </div>
+</section>
+
+
+<section id="hidraulica" class="energia-section">
+  <h2>🌊 Energía Hidráulica 💧</h2>
+  <div class="info-containers">
+    <div class="info-box">
+      <h3>¿Qué es?</h3>
+      <p>Utiliza el movimiento del agua (ríos, presas) para mover turbinas y generar electricidad.</p>
+    </div>
+    <div class="info-box">
+      <h3>impacto</h3>
+      <p>Muy eficiente, pero requiere un impacto ambiental controlado.</p>
+    </div>
+  </div>
+  <div class="img-container">
+    <img src="hidro.png" alt="Energía Hidráulica">
+  </div>
+</section>
+
+<section id="geotermica" class="energia-section">
+  <h2>🌋 Energía Geotérmica 🌋</h2>
+  <div class="info-containers">
+    <div class="info-box">
+      <h3>¿Qué es?</h3>
+      <p>Aprovecha el calor interno del planeta para generar energia eléctrica o calentar espacios.</p>
+    </div>
+    <div class="info-box">
+      <h3>Uso</h3>
+      <p>Utilizado en paises con actividdad volcanica o geotermica como Islandia o Chile. </p>
+    </div>
+  </div>
+  <div class="img-container">
+    <img src="termica.png" alt="Energía Geotérmica">
+  </div>
+</section>
+
+
+<section id="beneficios" class="energia-section">
+  <h2>✅ Beneficios de las Energías Renovables</h2>
+  <div class="info-containers beneficios-grid">
+    <div class="info-box">
+      <h3>🌍 Cuidado del planeta</h3>
+      <p>No contaminan y ayudan a detener el cambio climático</p>
+    </div>
+    <div class="info-box">
+      <h3>♻️ Energía infinita</h3>
+      <p>El sol, el viento y el agua son fuentes inagotables de energía.</p>
+    </div>
+    <div class="info-box">
+      <h3>💰 Ahorro económico</h3>
+      <p>Reducen los costos de energía a largo plazo en hogares y empresas</p>
+    </div>
+  </div>
+</section>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
